@@ -1,0 +1,47 @@
+GitHub:-it is a platform where we can store the data,modify the data 
+
+
+git:- it is a distributed version control system.
+      it is mediator of the GitHub and 
+_________________________   
+index.html
+
+
+
+
+
+
+
+
+git-version
+git init
+git add filename
+    git add fileName,fieName
+     
+    git add.
+_________________________________
+tracking area
+   
+git commit -m "msg"
+__________________________
+git remote add origin https://github.com/Manasa30M/git-demo.git
+  git push origin master
+
+
+
+git add
+git commit -m 
+
+
+
+git version
+git init
+git add
+git commit -m "ms"
+git config --global user.email "email"
+git config --global user.name "usename"
+git config --lists
+git status
+git commit -m "msg"
+git remote add origin url
+git push origin master
