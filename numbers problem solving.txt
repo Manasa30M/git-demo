@@ -1,0 +1,2272 @@
+Q) write a java program to find out greatest of two numbers?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();//5
+
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();//10
+
+		if(a>b)
+			System.out.println(a+" is greatest");
+
+		if(b>a)
+			System.out.println(b+" is greatest");
+	}
+}
+Q) Write a java program to find out greatest of three numbers?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();//5
+
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();//10
+
+		System.out.println("Enter the third number :");
+		int c=sc.nextInt();//2
+
+		if((a>b) && (a>c))
+			System.out.println(a+" is greatest");
+
+		if((b>a) && (b>c) )
+			System.out.println(b+" is greatest");
+
+		if((c>a) && (c>b))
+			System.out.println(c+" is greatest");
+	}
+}
+Q) Write a java program to find out given age is eligible to vote or not?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the age :");
+		int age=sc.nextInt();
+
+		if(age>=18)
+			System.out.println("U r eligible to vote");
+		else
+			System.out.println("U r not eligible to vote");
+	}
+}
+Q) Write a java program to find out given number is even or odd?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		if(n%2==0)
+			System.out.println("It is even number");
+		else
+			System.out.println("It is odd number");
+	}
+}
+Q) Write a java program to find out given number is odd or not?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		if(n%2!=0)
+			System.out.println("It is odd number");
+		else
+			System.out.println("It is not odd number");
+	}
+}
+Q) Write a java program to check given number is positive or negative?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		if(n==0)
+		{
+			System.out.println("It is not a positive or negative number");
+			System.exit(0);
+		}
+
+		if(n>0)
+			System.out.println("It is positive number");
+		else
+			System.out.println("It is negative number");
+		
+	}
+}
+Q) Write a java program to find out given year is a leap year or not?
+
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the year :");
+		int year=sc.nextInt();
+
+
+		if(year%4==0 && year%100!=0 || year%400==0)
+			System.out.println("It is a leap year");
+		else
+			System.out.println("It is not a leap year");
+	}
+}
+
+Q) Write a java program to display given alphabet is a vowel or consonant?
+
+Input:
+		Enter the Alphabet: a 
+Output:
+		It is a vowel
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the alphabet :");
+		char ch=sc.next().charAt(0);
+
+		if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u')
+			System.out.println("It is a vowel");
+		else
+			System.out.println("It is a consonent");
+	}
+}
+Q) John went to shoe showroom to buy a pair of shows. But he has a myth that if shoe price divisible by 3 and 5 then only he can purchase that show. Write a java program to enter the shoe price and display John can buy that show or not?
+
+Input:
+		Enter the shoe price: 1500
+Output:
+		John can buy the shoe
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the shoe price :");
+		int price=sc.nextInt();
+
+		if(price%3==0 && price%5==0)
+			System.out.println("John can buy the shoe");
+		else
+			System.out.println("John can't buy the shoe");
+	}
+}
+Q) Write a java program to find out greatest of two numbers?
+
+import java.util.Scanner;
+class  Test 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();
+		
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		//logic 
+		int max = (a>b)?a:b;
+
+		System.out.println(max+" is greatest");
+	}
+}
+Q) Write a java program to find out greatest of three numbers ?
+
+
+import java.util.Scanner;
+class  Test 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();
+		
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		System.out.println("Enter the third number :");
+		int c=sc.nextInt();
+
+		//logic 
+		int max = (a>b)?((a>c)?a:c):((b>c)?b:c);
+
+		System.out.println(max+" is greatest");
+	}
+}
+Q) Write a java program to check given alphabet is a uppercase letter, lowercase letter, digit or a special symbol?
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the alphabet :");
+		char ch=sc.next().charAt(0);
+
+		if(ch>='A' && ch<='Z')
+			System.out.println("It is uppercase letter");
+		else if(ch>='a' && ch<='z')
+			System.out.println("It is lowercase letter");
+		else if(ch>='0' && ch<='9')
+			System.out.println("It is digit");
+		else 
+			System.out.println("It is special symbol");
+	}
+}
+Q) Write a java program to accept six marks of a student then find out total, average and grade?
+
+i) if average is greater than equals to 70 then A grade.
+
+ii) if average is greater than equals to 50 then B grade.
+
+iii) if average is greater than equals to 35 then C grade.
+
+iv) if average is less than 35 then failed.
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int m1=89,m2=36,m3=44,m4=51,m5=62,m6=73,total=0;
+
+		total=m1+m2+m3+m4+m5+m6;
+		float average = (float)total/6;
+
+		System.out.println("Total :"+total);
+		System.out.printf("Average : %.2f \n",average);
+
+		if(average>=70  && average<=100)
+			System.out.println("Grade : A grade");
+		else if(average >=50 && average<=69)
+			System.out.println("Grade : B grade");
+		else if(average >=35 && average <=49)
+			System.out.println("Grade : C grade");
+		else 
+			System.out.println("Grade : Failed");
+	}
+}
+
+Q) Write a java program to accept week number (1-7) then display the day of the week?
+
+Input:
+	5
+
+Output:
+	Friday 	
+
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the Week number :");
+		int week = sc.nextInt();
+
+		if(week==1)
+			System.out.println("Monday");
+		else if(week==2)
+			System.out.println("Tuesday");
+		else if(week==3)
+			System.out.println("Wednesday");
+		else if(week==4)
+			System.out.println("Thursday");
+		else if(week==5)
+			System.out.println("Friday");
+		else if(week==6)
+			System.out.println("Saturday");
+		else if(week==7)
+			System.out.println("Sunday");
+		else 
+			System.out.println("Invalid week number");
+	}
+}
+Q) Write a java program to compare two dates?
+
+import java.time.LocalDate;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		LocalDate date1=LocalDate.of(2024,02,23);
+		LocalDate date2=LocalDate.now();
+
+		if(date1.compareTo(date2)>0)
+			System.out.println("date1 is greatest");
+		else if(date1.compareTo(date2)<0)
+			System.out.println("date2 is greatest");
+		else 
+			System.out.println("Both are same");
+	}
+}
+Q)
+
+Road Traveling program 
+
+If a user travel for 1 km then charge 5 rupees.
+If user travel less than 20 km then charge 2 rupees (per/km).
+If user travel more than 20 km then charge 1.5 rupees (per/km).
+
+Input:
+	Enter the distance travelled (in kms) : 20
+
+Output:
+	
+	The total charge for traveling "+ 16 + " km is: " + 32.0 + " rupees.
+	
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the distance travelled (in kms) : ");
+		int distance = sc.nextInt(); // 25
+
+		double costCharges=0;
+
+		if(distance==1)
+		{
+			costCharges=5;
+		}
+		else if(distance<=20)
+		{
+			costCharges= distance * 2;
+		}
+		else if(distance>20)
+		{
+			costCharges= distance * 1.5d;
+		}
+
+		System.out.println("The total charge for traveling "+ distance + " km is: " + costCharges + " rupees");
+	}
+}
+Q)
+
+Shipping Cost program  
+
+Write a java program to calculate costs based on user input. The program should prompt users to enter the total weight of items (in kilograms) and the shipping destination (domestic or international). For domestic orders, the program should charge Rs.500 for weights up to 5 kg and Rs.100 per additional kg. For international orders, it should charge Rs.1000 for weights up to 5 kg, Rs.200 per additional kg, and an Rs.500 surcharge for weights exceeding 10 kg. Print calculated shipping cost.
+
+Input:
+	Enter total weight of items (in kilograms) : 11 
+	Enter the shipping destination : domestic 
+
+Output:
+	 
+	Calculated shipping cost : 1100.0
+	(11kg = Rs. 500 + 6*100(600))
+
+ex:
+---
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter total weight of items (in kilograms) :");
+		int weight=sc.nextInt(); // 11
+
+		System.out.println("Enter the shipping destination :");
+		String destination = sc.next().toLowerCase(); // domestic
+
+		double costCharges=0;
+
+		if(destination.equals("domestic"))
+		{
+			if(weight<=5)
+			{
+				costCharges= 500;
+			}
+			else 
+			{
+				costCharges= 500 + (weight-5)*100;
+			}
+		}
+		else if(destination.equals("international"))
+		{
+			if(weight<=5)
+			{
+				costCharges=1000;
+			}
+			else if(weight>5 && weight<=10)
+			{
+				costCharges= 1000 + (weight-5)*200;
+			}
+			else if(weight>10)
+			{
+				costCharges= 1000 + (weight-5)*200 + 500;
+			}
+
+		}
+		else
+		{
+			System.out.println("Invalid destination");
+			return;
+		}
+
+		System.out.println("Calculated shipping cost :"+ costCharges);
+
+	}
+}
+Q) Write a java program to perform swapping of two numbers without using third variable?
+
+import java.util.Scanner;
+class Example7 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();
+		
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		System.out.println("Before swapping a="+a+" and b="+b);
+
+		//logic 
+		a = a + b;
+		b = a - b;
+		a = a - b;
+
+		System.out.println("After swapping a="+a+" and b="+b);
+	}
+}
+Q) Convert CGPA to percentage
+import java.util.Scanner;
+class Example8 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the CGPA :");
+		float cgpa=sc.nextFloat();
+
+		//logic
+		float percentage = cgpa*9.5f;
+
+		System.out.printf("CGPA to Percentage is =%.2f",percentage);
+	}
+}
+Q)
+There is one running race between different participants. So in that race two partner need to finish the race. There is four rounds of race in that each lane length is 100m.So in that one participant will cover 30% of the lane length and another partner will cover remaining length of lane. So print each participant covers distance in that race.
+Input:
+		Enter the length of the each lane: 100
+		Enter the number of rounds: 4
+		Enter the percentage of first participant to cover: 30
+
+Output:
+		First participant will cover 120 meters in a total race
+		Second participant will cover 280 meters in a total race
+
+ex:
+---
+import java.util.Scanner;
+class Example10
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the length of the each lane :");
+		int lane=sc.nextInt(); // 100
+
+		System.out.println("Enter the number of rounds :");
+		int rounds=sc.nextInt(); // 4
+
+		System.out.println("Enter the percentage of first participant to cover :");
+		int firstParticipantPer=sc.nextInt();// 30
+		
+		//logic 
+		int firstParticipant = lane * rounds * firstParticipantPer/100;
+		int secondParticipant = lane * rounds - firstParticipant;
+
+		System.out.println("First participant will cover "+firstParticipant+" meters in a total race");
+		System.out.println("Second participant will cover "+secondParticipant+" meters in a total race");
+
+	}
+}
+Q) Write a java program to find out given number is positive or negative by using nested if stmt?
+
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt(); // -5 
+
+		if(n!=0)
+		{
+			if(n>0)
+			{
+				System.out.println("It is a positive number");
+				System.exit(0);
+			}
+
+			System.out.println("It is a negative number");
+		}
+	}
+}
+Q) Month names using switch case
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the Number in word :");
+		String str=sc.next();
+
+		switch(str)
+		{
+			case "one": System.out.println("January"); break;
+			case "two": System.out.println("February"); break;
+			case "three": System.out.println("March"); break;
+			case "four": System.out.println("April"); break;
+			case "five": System.out.println("May"); break;
+			default : System.out.println("Coming Soon..");
+		}	
+	}
+}
+Q) Write a java program to display 10 natural numbers?
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int i=1;
+		while(i<=10)
+		{
+			System.out.print(i+" ");//1 2 3 4 5 6 7 8 9 10
+			i++;
+		}
+	}
+}
+Q) Write a java program to display sum of 10 natural numbers?
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int i=1,sum=0;
+		while(i<=10)
+		{
+			sum +=i;
+			i++;
+		}
+		System.out.println(sum);
+	}
+}
+Q) Write a java program to display factorial of a given number?
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();//5
+
+		int i=n,fact=1;
+
+		while(i>=1)
+		{
+			fact*=i;
+			i--;
+		}
+		System.out.println(fact);
+	}
+}
+
+Q) Write a java program to display multiplication table of a given number?
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();//5
+
+		int i=1;
+		while(i<=10)
+		{
+			System.out.println(n+" * "+i+" = "+n*i);
+			i++;
+		}
+	}
+}
+Q) 
+There is a well length of 10m and one frog unfortunately fell down in that well. So every day frog tries to come out from well. So frog will jump 2m and rollback 1m everyday .Then print in how many days frog will be outside of the well.
+
+Input:
+		Enter the length of the well: 10 
+		Enter the length of jump: 2
+		Enter the length of rollback: 1
+Output:
+		In 10 days frog will be outside of the well.
+
+
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the length of the well :");
+		int wellLength = sc.nextInt();
+
+		System.out.println("Enter the length of jump :");
+		int jumpLength = sc.nextInt();
+
+		System.out.println("Enter the length of rollback :");
+		int rollback = sc.nextInt();
+
+		int currentPosition = 0;
+		int days=0;
+
+		while(currentPosition<wellLength)
+		{
+			days++;
+			currentPosition+=jumpLength;
+			currentPosition-=rollback;
+
+			if(currentPosition>=wellLength)
+			{
+				break;
+			}
+		}
+		System.out.println("In "+days+" days frog will be outside of the well");
+	}
+}
+Q) Write a java program to perform sum of digits of a given number?
+
+input:
+	123
+
+output:
+	6
+
+ex:
+---
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the number :");
+		int n = sc.nextInt();
+
+		int rem,sum=0;
+
+		while(n>0)
+		{
+			rem = n%10;
+			sum = sum + rem;
+			n = n/10;
+		}
+
+		System.out.println(sum);
+	}
+}
+Q) write a java program to find out given number is armstrong or not?
+
+input:
+	153
+
+output:
+	It is a Armstrong number 
+	
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the number :");
+		int n = sc.nextInt();
+
+		int temp=n;
+
+		int rem,sum=0;
+
+		while(n>0)
+		{
+			rem = n%10;
+			sum = sum + rem * rem * rem;
+			n = n/10;
+		}
+
+		if(temp==sum)
+			System.out.println("It is a armstrong number");
+		else
+			System.out.println("It is not a armstrong number");
+	}
+}
+Q) Write a java program to display reverse of a given number?
+
+input:
+	123
+
+output:
+	321
+
+ex:
+---
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the number :");
+		int n = sc.nextInt();
+
+		int rem,rev=0;
+
+		while(n>0)
+		{
+			rem = n%10;
+			rev = rev * 10 + rem;
+			n=n/10;
+		}	
+		System.out.println(rev);
+	}
+}
+Q) Write a java program to find out given number is palindrome or not?
+
+input:
+	121
+output:
+	It is a palindrome number 
+
+ex:
+---
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the number :");
+		int n = sc.nextInt();
+
+		int temp=n;
+
+		int rem,rev=0;
+
+		while(n>0)
+		{
+			rem = n%10;
+			rev = rev * 10 + rem;
+			n=n/10;
+		}	
+		
+		if(temp==rev)
+			System.out.println("It is a palindrome number");
+		else
+			System.out.println("It is not a palindrome number");
+	}
+}
+Q) Write a java program to check given number is prime or not ?
+
+input:
+	5
+
+output:
+	It is a prime number 
+
+ex:
+----
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+
+		System.out.println("Enter the number :");
+		int n = sc.nextInt();
+
+		boolean flag=true;
+		for(int i=2;i<=n/2;i++)
+
+		{
+			if(n%i==0)
+			{
+				flag=false;
+				break;
+			}
+		}
+		if(flag==true)
+			System.out.println("It is a prime number");
+		else
+			System.out.println("It is not a prime number");
+	}
+}
+Q) Write a java program to display list of prime number from 1 to 100?
+
+output:
+	2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		for(int n=2;n<=100;n++)
+		{
+			boolean flag=true;
+			for(int i=2;i<=n/2;i++)
+			{
+				if(n%i==0)
+				{
+					flag=false;
+					break;
+				}
+			}
+			if(flag==true)
+				System.out.print(n+" ");
+		}
+	}
+}
+Q) Write a java program to check given number is perfect or not?
+
+input:
+	6
+
+Output:
+	It is a perfect number 
+
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();//6
+
+		int sum=0;
+		for(int i=1;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				sum+=i;
+			}
+		}
+		if(n==sum)
+			System.out.println("It is a perfect number");
+		else
+			System.out.println("It is not a perfect number");
+
+	}
+}
+Q) Write a java program to find out GCD (Greatest Common Divisor) of two numbers?
+
+input:
+	12	18
+
+output:
+	6
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int a=12,b=18,gcd=0;
+
+		for(int i=1;i<=a && i<=b;i++)
+		{
+			if((a%i==0) && (b%i==0))
+			{
+				gcd=i;
+			}
+		}
+
+		System.out.println("GCD of two numbers is ="+gcd);
+	}
+}
+	
+
+Q) Write a java program to display fibonacci series of a given number?
+
+input:
+	6
+
+output:
+	0 1 1 2 3 5 8	
+
+ex:
+---
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();//6
+
+		int a=0,b=1,c;
+
+		System.out.print(a+" "+b+" ");
+
+		for(int i=2;i<=n;i++)
+		{
+			c = a + b;
+			System.out.print(c+" ");
+			a=b;
+			b=c;
+		}
+	}
+}
+
+
+LOOP Patterns
+==============
+
+1)
+
+
+
+1 1 1 1
+2 2 2 2
+3 3 3 3 
+4 4 4 4 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=4;j++)
+			{
+				System.out.print(i+" ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+2) 
+
+1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=4;j++)
+			{
+				System.out.print(j+" ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+3) 
+
+* * * * 
+* * * * 
+* * * * 
+* * * * 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=4;j++)
+			{
+				System.out.print("* ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+4) 
+
+* * * * 
+*     *
+*     *
+* * * * 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=4;j++)
+			{
+				if(i==1 || i==4 || j==1 || j==4)
+					System.out.print("* ");
+				else
+					System.out.print("  ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+5) 
+
+* - - - 
+- * - - 
+- - * - 
+- - - * 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=4;j++)
+			{
+				if(i==j)
+					System.out.print("* ");
+				else
+					System.out.print("- ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+6) 
+
+* - - - * 
+- * - * -
+- - * - - 
+- * - * -
+* - - - * 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=5;i++)
+		{
+			//cols
+			for(int j=1;j<=5;j++)
+			{
+				if(i==j || i+j==6)
+					System.out.print("* ");
+				else
+					System.out.print("- ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+7) 
+
+    *
+    *
+* * * * * 
+    *
+    * 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=5;i++)
+		{
+			//cols
+			for(int j=1;j<=5;j++)
+			{
+				if(i==3 || j==3)
+					System.out.print("* ");
+				else
+					System.out.print("  ");
+			}
+
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+8) 
+
+4 4 4 4 
+3 3 3 3
+2 2 2 2
+1 1 1 1 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=4;i>=1;i--)
+		{
+			//cols
+			for(int j=1;j<=4;j++)
+			{
+				System.out.print(i+" ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+
+Left Side Loop Patterns
+=======================
+1)
+
+1
+2 2 
+3 3 3 
+4 4 4 4  
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(i+" ");
+			}
+			//new line
+			System.out.println();
+		}
+	}
+}
+
+2) 
+
+*
+* * 
+* * * 
+* * * * 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			//new line
+			System.out.println();
+		}
+	}
+}
+
+
+3) 
+
+4 4 4 4 
+3 3 3
+2 2 
+1  
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows
+		for(int i=4;i>=1;i--)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(i+" ");
+			}
+			//new line
+			System.out.println();
+		}
+	}
+}
+
+4) 
+
+1
+2 3 
+4 5 6
+7 8 9 0 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int k=1;
+
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				if(k<=9)
+					System.out.print(k++ +" ");
+				else
+					System.out.print("0 ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+5) 
+
+2
+4  6 
+8  10 12
+14 16 18 20
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int k=2;
+		
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(k+" ");	
+				k+=2;
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+6)
+1
+3  5 
+7  9  11
+13 15 17 19
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int k=1;
+		
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(k+" ");	
+				k+=2;
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+7)
+
+2
+3  5
+7  11  13
+17 19  23  29
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int n=2;
+		
+		//rows
+		for(int i=1;i<=4;i++)
+		{
+			//cols
+			for(int j=1;j<=i;j++)
+			{
+				while(true)
+				{
+					boolean flag=true;
+					for(int k=2;k<=n/2;k++)
+					{
+						if(n%k==0)
+						{
+							flag=false;
+							break;
+						}
+					}
+					if(flag==true)
+					{
+						System.out.print(n+" ");
+						n++;
+						break;
+					}
+					else
+					{
+						n++;
+					}
+				}
+			}
+			//new line 
+			System.out.println("");
+		}
+	}
+}
+
+Assignment
+===========
+Q)
+A 
+B B 
+C C C 
+D D D D 
+
+8)
+
+1
+2 1 
+1 2 3 
+4 3 2 1 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=1;i<=4;i++)
+		{
+			if(i%2!=0)
+			{
+				for(int j=1;j<=i;j++)
+				{
+					System.out.print(j+" ");
+				}
+				//new line 
+				System.out.println();
+			}
+			else
+			{
+				for(int j=i;j>=1;j--)
+				{
+					System.out.print(j+" ");
+				}
+				//new line 
+				System.out.println();
+			}	
+		}
+	}
+}
+
+Right side loop patterns
+=========================
+1)
+      1
+    2 2 
+  3 3 3 
+4 4 4 4 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=1;i<=4;i++)
+		{
+			//space 
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+
+			//elements 
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(i+" ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+2)
+4 4 4 4
+  3 3 3 
+    2 2 
+      1 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=4;i>=1;i--)
+		{
+			//space 
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+
+			//elements 
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(i+" ");
+			}
+			//new line 
+			System.out.println();
+
+		}
+	}
+}
+
+3)
+      *
+    * * 
+  * * * 
+* * * * 
+  * * * 
+    * * 
+      * 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=1;i<=4;i++)
+		{
+			//space 
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+
+			//elements 
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			//new line 
+			System.out.println();
+		}
+		//rows 
+		for(int i=3;i>=1;i--)
+		{
+			//space 
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+
+			//elements 
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+Pyramid loop pattern
+=====================
+1)
+
+      1 
+    1 2 1
+  1 2 3 2 1 
+1 2 3 4 3 2 1 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=1;i<=4;i++)
+		{
+			//space
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+			//left side elements
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(j+" ");
+			}
+			//right side elements 
+			for(int j=i-1;j>=1;j--)
+			{
+				System.out.print(j+" ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+2)
+
+* * * * * * * 
+  * * * * * 
+    * * * 
+      *
+
+ex:
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=4;i>=1;i--)
+		{
+			//space
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+			//left side elements
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			//right side elements 
+			for(int j=i-1;j>=1;j--)
+			{
+				System.out.print("* ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+3)
+
+      *
+    * * * 
+  * * * * * 
+* * * * * * * 
+  * * * * * 
+    * * * 
+      * 
+
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//rows 
+		for(int i=1;i<=4;i++)
+		{
+			//space
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+			//left side elements
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			//right side elements 
+			for(int j=i-1;j>=1;j--)
+			{
+				System.out.print("* ");
+			}
+			//new line 
+			System.out.println();
+		}
+		//rows 
+		for(int i=3;i>=1;i--)
+		{
+			//space
+			for(int j=4;j>i;j--)
+			{
+				System.out.print("  ");
+			}
+			//left side elements
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print("* ");
+			}
+			//right side elements 
+			for(int j=i-1;j>=1;j--)
+			{
+				System.out.print("* ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+Q) Write a java program to display below loop pattern?
+
+1             1 
+1 2         2 1 
+1 2 3     3 2 1 
+1 2 3 4 4 3 2 1 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int rows=4;
+
+		//rows 
+		for(int i=1;i<=rows;i++)
+		{
+			//left side 
+			for(int j=1;j<=i;j++)
+			{
+				System.out.print(j+" ");
+			}
+
+			//space 
+			for(int j=1;j<=(rows-i)*2;j++)
+			{
+				System.out.print("  ");
+			}
+
+			//right side
+			for(int j=i;j>=1;j--)
+			{
+				System.out.print(j+" ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+Q) Write a java program to display pascal triangle?
+
+      1
+     1 1
+    1 2 1 
+   1 3 3 1
+  1 4 6 4 1 
+
+ex:
+--
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		
+		for(int i=0;i<5;i++)
+		{
+			//space
+			for(int j=4;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+			
+			int number=1;
+			for(int k=0;k<=i;k++)
+			{
+				System.out.print(number+" ");
+
+				number = number * (i-k)/(k+1);
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+Q) Write a java program to display below loop pattern?
+
+
+	* 
+       * * 
+      * * * 
+     * * * * 
+    * * * * * 
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		
+		for(int i=0;i<5;i++)
+		{
+			//space
+			for(int j=4;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+		
+			for(int k=0;k<=i;k++)
+			{
+				System.out.print("* ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+Q) Write a java program to display below loop pattern?
+
+4 4 4 4 4 4 4 
+4 3 3 3 3 3 4
+4 3 2 2 2 3 4
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		int size=7;
+		int n=4;
+
+		//rows 
+		for(int i=0;i<size;i++)
+		{
+			//cols 
+			for(int j=0;j<size;j++)
+			{
+				int result = n - Math.min(Math.min(i,j),Math.min(size-i-1,size-j-1));
+				System.out.print(result+" ");
+			}
+			//new line 
+			System.out.println();
+		}
+	}
+}
+
+
+Assignment 
+==========
+Q) Write a java program to display reverse of a given number in words?
+
+input:
+	123
+
+output:
+	ThreeTwoOne 
+
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		while(n>0)
+		{
+			switch(n%10)
+			{
+				case 0: System.out.print("Zero");break;
+				case 1: System.out.print("One");break;
+				case 2: System.out.print("Two");break;
+				case 3: System.out.print("Three");break;
+				case 4: System.out.print("Four");break;
+				case 5: System.out.print("Five");break;
+				case 6: System.out.print("Six");break;
+				case 7: System.out.print("Seven");break;
+				case 8: System.out.print("Eight");break;
+				case 9: System.out.print("Nine");break;
+			}
+			n=n/10;
+		}
+	}
+}
+
+
+Assigment 
+=========
+1
+2 # 1
+1 # 2 # 3
+4 # 3 # 2 # 1 
+
+int rows=4;
+for (int i = rows; i >= 1; i--) {
+            for (int j = i; j >= 1; j--) {
+                System.out.print(j);
+                if (j > 1) {
+                    System.out.print(" # ");
+                }
+            }
+            System.out.println();
+        }
+
+Q) Write a java program to perform sum of two numbers using with returntype with argument method?
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first number :");
+		int a =sc.nextInt();
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		//caller method 
+		System.out.println("sum of two numbers is ="+sum(a,b));
+	}
+	//callie method 
+	public static int sum(int a,int b)
+	{
+		int c = a+b;
+
+		return c;
+	}
+}
+
+ex:
+----
+Write a java program to find out given number is even or odd using with returntype and with argument method?
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n =sc.nextInt();
+
+		//caller method
+		if(find(n))
+			System.out.println("It is a even number");
+		else
+			System.out.println("It is a odd number");
+	}	
+	//callie method 
+	public static boolean find(int n)
+	{
+		if(n%2==0)
+			return true;
+		else
+			return false;
+	}
+}
+
+Q) Write a java program to perform sum of two numbers using no returntype with no argument method?
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//caller method 
+		sum();
+		sum(); // reusability for business logic 
+	}
+	//callie method 
+	public static void sum()
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();
+
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		int c = a+b;
+
+		System.out.println("sum of two number is ="+c);
+	}
+}
+
+
+Q) Write a java program to check given number is even or odd using no return type with no argument method?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args)
+	{
+		//caller method 
+		check();
+	}
+	//callie method 
+	public static void check()
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		if((n&1)==0)
+			System.out.println("It is even number");
+		else
+			System.out.println("It is odd number");
+	}
+}
+
+Q) Write a java program to perform sum of two numbers with no returntype with argument method?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();
+		
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		//caller method 
+		sum(a,b);
+
+	}
+	//callie method
+	public static void sum(int a,int b)
+	{
+		int c = a+b;
+		System.out.println("sum of two numbers is ="+c);
+	}
+}
+
+
+Q) Write a java program to display cube of a given number?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		//caller method 
+		cube(n);
+	}
+	//callie method
+	public static void cube(int n)
+	{
+		int result = (int) Math.pow(n,3);
+		System.out.println("Cube of a given number is ="+result);
+	}
+}
+
+Q) Write a java program to perform sum of two numbers with returntype with no argument method?
+
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args)
+	{
+		//caller method
+		int k=sum();
+		System.out.println("sum of two numbers is ="+k);
+	}
+	//callie method
+	public static int sum()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the first number :");
+		int a=sc.nextInt();
+
+		System.out.println("Enter the second number :");
+		int b=sc.nextInt();
+
+		int c = a + b;
+
+		return c;
+	}
+}
+
+
+Q) Write a java program to perform  area of a circle using with returntype with no argument method?
+
+import java.util.Scanner;
+class Test 
+{
+	public static void main(String[] args)
+	{
+		//caller method 
+		double k=circle();
+		System.out.printf("Area of a circle is = %.2f",k);
+	}
+	//callie method
+	public static double circle()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the radius :");
+		int r=sc.nextInt();
+
+		double area = Math.PI*r*r;
+
+		return area;
+	}
+}
+
+Q) Write a java program to display 10 natural numbers without using loops?
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//caller method
+		display(1);
+	}
+	//callie method 
+	public static void display(int i)
+	{
+		if(i<=10)
+		{
+			System.out.print(i+" ");//1
+
+			display(i+1);
+		}
+	}
+}
+
+Q) Write a java program to perform sum of two numbers without using arithmetic operator?
+
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		//caller method
+		System.out.println("sum of two numbers is ="+sum(5,10));
+	}
+	//callie method 
+	public static int sum(int a,int b)
+	{
+		if(a==0)
+			return b;
+		
+		return sum(--a,++b);
+	}
+}
+
+
+Q) Write a java program to find out factorial of a given number using recursion?
+
+input:
+	5
+
+output:
+	120 
+
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		//caller method 
+		System.out.println("Factorial of a given number is ="+fact(n));
+	}
+	//callie method 
+	public static int fact(int n)
+	{
+		if(n<0)
+			return -1;
+
+		if(n==0)
+			return 1;
+
+		return n*fact(n-1);
+	}
+}
+
+
+Q) Write a java program to find out N-th element of fibonacci series?
+
+fibonacci sequence : 0 1 1 2 3 5 8 .........
+
+input:
+	4
+
+output:
+	2
+
+import java.util.Scanner;
+class Test  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the number :");
+		int n=sc.nextInt();
+
+		//caller method 
+		System.out.println(fib(n));
+	}
+	//callie method 
+	public static int fib(int n)
+	{
+		if(n==0 | n==1)
+			return 0;
+		if(n==2)
+			return 1;
+
+		return fib(n-1)+fib(n-2);
+	}
+}
